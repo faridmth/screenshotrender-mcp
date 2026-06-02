@@ -1,0 +1,19 @@
+startCommand:
+  type: stdio
+  configSchema:
+    type: object
+    required:
+      - screenshotrenderApiKey
+    properties:
+      screenshotrenderApiKey:
+        type: string
+        title: ScreenshotRender API Key
+        description: Your ScreenshotRender API key (starts with sr-). Get one at https://screenshotrender.com.
+  commandFunction: |-
+    (config) => ({
+      command: 'npx',
+      args: ['-y', 'screenshotrender-mcp'],
+      env: { SCREENSHOTRENDER_API_KEY: config.screenshotrenderApiKey }
+    })
+  exampleConfig:
+    screenshotrenderApiKey: sr-your-key-here

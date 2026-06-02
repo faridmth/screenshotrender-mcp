@@ -1,5 +1,5 @@
 {
-  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-07-09/server.json",
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.faridmth/screenshotrender-mcp",
   "description": "Capture website screenshots from any MCP client via the ScreenshotRender API.",
   "version": "1.0.1",
@@ -20,6 +20,7 @@
           "name": "SCREENSHOTRENDER_API_KEY",
           "description": "Your ScreenshotRender API key (starts with sr-). Get one at https://screenshotrender.com.",
           "isRequired": true,
+          "format": "string",
           "isSecret": true
         }
       ]

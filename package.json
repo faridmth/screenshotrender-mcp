@@ -1,6 +1,7 @@
 {
   "name": "screenshotrender-mcp",
-  "version": "1.0.0",
+  "version": "1.0.1",
+  "mcpName": "io.github.faridmth/screenshotrender-mcp",
   "description": "MCP server for ScreenshotRender — let Claude, Cursor, and any MCP client capture website screenshots through the ScreenshotRender API.",
   "type": "module",
   "bin": {

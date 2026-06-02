@@ -1,0 +1,28 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-07-09/server.json",
+  "name": "io.github.YOUR_GITHUB/screenshotrender-mcp",
+  "description": "Capture website screenshots from any MCP client via the ScreenshotRender API.",
+  "version": "1.0.0",
+  "repository": {
+    "url": "https://github.com/YOUR_GITHUB/screenshotrender-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "screenshotrender-mcp",
+      "version": "1.0.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "SCREENSHOTRENDER_API_KEY",
+          "description": "Your ScreenshotRender API key (starts with sr-). Get one at https://screenshotrender.com.",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}

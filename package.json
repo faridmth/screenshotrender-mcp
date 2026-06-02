@@ -1,0 +1,47 @@
+{
+  "name": "screenshotrender-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for ScreenshotRender — let Claude, Cursor, and any MCP client capture website screenshots through the ScreenshotRender API.",
+  "type": "module",
+  "bin": {
+    "screenshotrender-mcp": "index.js"
+  },
+  "files": [
+    "index.js",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "start": "node index.js",
+    "inspect": "npx @modelcontextprotocol/inspector node index.js"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "screenshot",
+    "screenshot-api",
+    "website-screenshot",
+    "claude",
+    "cursor",
+    "ai",
+    "llm",
+    "screenshotrender"
+  ],
+  "author": "ScreenshotRender",
+  "license": "MIT",
+  "homepage": "https://screenshotrender.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YOUR_GITHUB/screenshotrender-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/YOUR_GITHUB/screenshotrender-mcp/issues"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.0",
+    "zod": "^3.23.8"
+  }
+}
